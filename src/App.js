@@ -5,11 +5,11 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <BrowserView>
+      <BrowserView>
+        <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            help me
+            시발
           </p>
           <a
             className="App-link"
@@ -19,11 +19,11 @@ function App() {
             >
             Learn React!
           </a>
-        </BrowserView>
-        <MobileView>
+        </header>
+      </BrowserView>
+      <MobileView>
 
-        </MobileView>
-      </header>
+      </MobileView>
     </div>
   );
 }
