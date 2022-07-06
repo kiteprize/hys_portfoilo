@@ -1,28 +1,22 @@
-import logo from './logo.svg';
 import {BrowserView, MobileView} from 'react-device-detect'
 import './App.css';
-
+import IntroduceLine  from './Introduce';
 function App() {
   return (
     <div className="App">
       <BrowserView>
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            시발
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-            Learn React!
-          </a>
-        </header>
+        <div className="App-header">
+          <IntroduceLine/>
+            <div className="Underline"></div>
+          개발자 황연상 입니다.
+        </div>
       </BrowserView>
       <MobileView>
-
+        <div className="App-header">
+          <IntroduceLine/>
+            <div className="Underline"></div>
+          개발자 황연상 입니다.
+        </div>
       </MobileView>
     </div>
   );
