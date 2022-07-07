@@ -1,7 +1,7 @@
 import React, {Component, useEffect } from 'react';
 import ReactTextTransition from "react-text-transition";
 import {BrowserView, MobileView} from 'react-device-detect'
-import './App.css';
+import './Epic_01.css';
 
 const texts = ["풀스택 개발자가 되고싶은 ", "기획과 개발을 동시에 배우고 있는 ", "웹 개발자의 첫 걸음을 떼고있는 "];
 
