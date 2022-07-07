@@ -4,6 +4,13 @@ import './App.css';
 import IntroduceLine  from './Introduce';
 
 function App() {
+  const setScreenSize = () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+  useEffect(() => {
+    window.addEventListener('resize', () => setScreenSize());
+  });
   return (
     <div className="App">
       <BrowserView>
@@ -14,7 +21,7 @@ function App() {
         </div>
       </BrowserView>
       <MobileView>
-        <div className="App-header">
+        <div className="mobile-App-header">
           <IntroduceLine/>
             <div className="Underline"></div>
           개발자 황연상 입니다.
