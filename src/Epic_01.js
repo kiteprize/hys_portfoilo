@@ -9,7 +9,7 @@ function App() {
     document.documentElement.style.setProperty('--vh', `${vh}px`);
   }
   useEffect(() => {
-    window.addEventListener('resize', () => setScreenSize());
+    setScreenSize();
   });
   return (
     <div className="App">
