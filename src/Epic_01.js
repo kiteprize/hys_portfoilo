@@ -3,7 +3,7 @@ import ReactTextTransition from "react-text-transition";
 import {BrowserView, MobileView} from 'react-device-detect'
 import './Epic_01.css';
 
-const texts = ["풀스택 개발자가 되고싶은 ", "기획과 개발을 동시에 배우고 있는 ", "웹 개발자의 첫 걸음을 떼고있는 "];
+const texts = ["풀스택 개발자가 되고싶은 ", "기획과 개발을 동시에 배우고있는 ", "웹 개발자의 첫 걸음을 떼고있는 "];
 
 class IntroduceLine extends Component{
     state = {
