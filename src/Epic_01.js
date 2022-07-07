@@ -1,7 +1,36 @@
-import { useEffect } from 'react';
+import React, {Component, useEffect } from 'react';
+import ReactTextTransition from "react-text-transition";
 import {BrowserView, MobileView} from 'react-device-detect'
 import './App.css';
-import IntroduceLine  from './Introduce';
+
+const texts = ["풀스택 개발자가 되고싶은 ", "기획과 개발을 동시에 배우고 있는 ", "웹 개발자의 첫 걸음을 떼고있는 "];
+
+class IntroduceLine extends Component{
+    state = {
+        textIndex: 0,
+        textFastIndex: 0,
+        paragraphIndex: 0,
+        customIndex: 0
+    };
+    
+    componentDidMount() {
+        setInterval(() => {
+            this.setState({
+            textFastIndex: this.state.textFastIndex + 1
+            });
+        }, 3000);
+    }    
+
+    render(){
+        return(
+            <React.Fragment>
+                <ReactTextTransition direction="up" style={{justifyContent : "center", alignItems : "center"}} inline>
+                    {texts[this.state.textFastIndex % texts.length]}
+                </ReactTextTransition>
+            </React.Fragment>
+        );
+    }
+}
 
 function App() {
   const setScreenSize = () => {
