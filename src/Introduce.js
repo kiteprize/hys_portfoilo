@@ -23,7 +23,7 @@ class IntroduceLine extends Component{
     render(){
         return(
             <React.Fragment>
-                <ReactTextTransition direction="up" inline>
+                <ReactTextTransition direction="up" style={{justifyContent : "center", alignItems : "center"}} inline>
                     {texts[this.state.textFastIndex % texts.length]}
                 </ReactTextTransition>
             </React.Fragment>
