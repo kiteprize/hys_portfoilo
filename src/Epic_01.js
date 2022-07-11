@@ -42,18 +42,18 @@ function App() {
     window.addEventListener("resize", setScreenSize);
   });
   return (
-    <div className="App">
+    <div>
       <BrowserView>
         <div className="App-header">
           <IntroduceLine/>
-            <div className="Underline"></div>
+          <div className="Underline"/>
           개발자 황연상 입니다.
         </div>
       </BrowserView>
       <MobileView>
         <div className="mobile-App-header">
           <IntroduceLine/>
-            <div className="Underline"></div>
+          <div className="Underline"/>
           개발자 황연상 입니다.
         </div>
       </MobileView>
