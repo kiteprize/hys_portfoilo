@@ -46,7 +46,7 @@ body{
 .Browser-Skillbox-Header-UnderLine{
     width: 236px;
     height: 2px;
-    margin: 0px 20px;
+    margin: 0px 20px 4px;
     background-color: #D9D9D9;
 }
 
@@ -79,8 +79,8 @@ body{
 }
 
 .Mobile-Skillbox-Header{
-    margin: 2.5vh;
-    font-size: 6.3vmin;
+    margin: 6.3vw 0px 5.2vw;
+    font-size: 5.2vw;
     padding: 0;
     text-align: center;
     color:black;
