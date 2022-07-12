@@ -8,11 +8,16 @@ function App(){
             <BrowserView>
                 <div className="background">
                     <div className="Browser-Maintext">
-                        PROJECTS
+                        PROJECT
                     </div>
                 </div>
             </BrowserView>
             <MobileView>
+                <div className="background">
+                    <div className="Mobile-Maintext">
+                        PROJECT
+                    </div>
+                </div>
             </MobileView>
         </div>
     )
