@@ -7,13 +7,12 @@ body{
     height: 100%;
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
 }
 
 .Browser-Maintext{
     margin-top: 56px;
-    margin-bottom: 32px;
+    margin-bottom: 56px;
     padding: 0;
     text-align: center;
     font-family: "Suit_EB";
@@ -21,13 +20,130 @@ body{
     color: white;
 }
 
+.Browser-Card{
+    height: 494px;
+    width: 276px;
+    border-radius: 16px;
+    margin-bottom: 144px;
+    position: relative;
+    background-color: #FCFCFC;
+    align-items: center;
+}
+
+.Browser-Card-Image{
+    height: 358px;
+    width: 272px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-color:#d9d9d9;
+    border-style: solid;
+    display: block;
+    border-width: 2px;
+}
+
+.Browser-Card-Title{
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+    text-align: left;
+    font-family: "Suit_B";
+    font-size: 26px;
+    color:black;
+}
+
+.Browser-Card-SubTitle{
+    margin-left: 16px;
+    text-align: left;
+    font-family: "Suit_SB";
+    font-size: 12px;
+    color: #626262;
+}
+
+.Browser-Card-Detail{
+    width: 96px;
+    height: 24px;
+    display: table;
+    text-align: center;
+    background-color: #343434;
+    position: absolute;
+    right: 12px;
+    bottom: 8px;
+    border-radius: 14px;
+}
+
+.Browser-Card-Detail-Text{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color:white;
+    font-family: "Suit_M";
+    font-size: 12px;
+}
+
 .Mobile-Maintext{
-    margin-top: 7.17vh;
-    margin-bottom: 4.1vh;
+    margin: 7.18vh 0px;
     padding: 0;
-    line-height: calc(4px + 8.42105vmin);
     text-align: center;
     font-family: "Suit_EB";
-    font-size: calc(4px + 7.36vmin);
+    font-size: 4.1vh;
     color: white;
+}
+
+.Mobile-Card{
+    height: 63.33vh;
+    width: 72.631vw;
+    border-radius: 16px;
+    margin-bottom: 18.46vh;
+    position: relative;
+    background-color: #FCFCFC;
+    align-items: center;
+}
+
+.Mobile-Card-Image{
+    height: 45.9vh;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-color:#d9d9d9;
+    border-style: solid;
+    display: block;
+    border-width: 2px;
+}
+
+.Mobile-Card-Title{
+    margin-top: 2.05vh;
+    margin-left: 4.21vw;
+    margin-bottom: 1.025vh;
+    text-align: left;
+    font-family: "Suit_B";
+    font-size: 3.33vh;
+    color:black;
+}
+
+.Mobile-Card-SubTitle{
+    margin-left: 4.21vw;
+    text-align: left;
+    font-family: "Suit_SB";
+    font-size: 1.53vh;
+    color: #626262;
+}
+
+.Mobile-Card-Detail{
+    width: 25.26vw;
+    height: 3.07vh;
+    display: table;
+    text-align: center;
+    background-color: #343434;
+    position: absolute;
+    right: 3.15vw;
+    bottom: 1.02vh;
+    border-radius: 14px;
+}
+
+.Mobile-Card-Detail-Text{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color:white;
+    font-family: "Suit_M";
+    font-size: 1.53vh;
 }
