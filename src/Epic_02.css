@@ -108,13 +108,4 @@ body{
     font-family: "Suit_B";
     src: url("./fonts/SUIT-Bold.ttf");
 }
-
-@font-face{
-    font-family: "Suit_SB";
-    src: url("./fonts/SUIT-SemiBold.ttf");
-} 
-
-@font-face{
-    font-family: "Suit_M";
-    src: url("./fonts/SUIT-Medium.ttf");
-} 
+ 
