@@ -13,7 +13,7 @@ function App(){
                     <div className="Browser-Card">
                         <img className="Browser-Card-Image" src="portfolio_thumbnail/portfolio.png" alt="PortFolio_MainPage"/>
                         <div className="Browser-Card-Title">
-                            개인 포트폴리오
+                            개인 포트폴리오 사이트
                         </div>
                         <div className="Browser-Card-SubTitle">
                             react를 사용한 반응형 포트폴리오 페이지
