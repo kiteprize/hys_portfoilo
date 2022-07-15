@@ -19,9 +19,7 @@ function App(){
                             react를 사용한 반응형 포트폴리오 페이지
                         </div>
                         <div className="Browser-Card-Detail">
-                            <div className="Browser-Card-Detail-Text">
-                                자세히 보기
-                            </div>
+                            자세히 보기
                         </div>
                     </div>
                 </div>
@@ -40,9 +38,7 @@ function App(){
                             React를 사용한 반응형 포트폴리오 페이지
                         </div>
                         <div className="Mobile-Card-Detail">
-                            <div className="Mobile-Card-Detail-Text">
-                                자세히 보기
-                            </div>
+                            자세히 보기
                         </div>
                     </div>
                 </div>
