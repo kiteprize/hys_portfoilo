@@ -157,7 +157,7 @@ body{
 }
 
 .drawer{
-    height: 100%;
+    height: calc(var(--vh)*100);
     background: #212121 !important;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
