@@ -1,11 +1,16 @@
 import React from "react";
+import Drawer from "react-bottom-drawer";
 import {BrowserView, MobileView} from 'react-device-detect';
 import Slider from "react-slick";
+import Epic04 from "./Epic_04"
 import "slick-carousel/slick/slick.css";
 import 'slick-carousel/slick/slick-theme.css';
 import './Epic_03.css';
 
 function App(){
+    const [isVisible, setIsVisible] = React.useState(false);
+    const openDrawer = React.useCallback(() => setIsVisible(true), []);
+    const closeDrawer = React.useCallback(() => setIsVisible(false), []);  
     const settings ={
         arrows: false,
         dots: true,
@@ -80,7 +85,7 @@ function App(){
                                 <div className="Mobile-Card-SubTitle">
                                     React를 사용한 반응형 포트폴리오 페이지
                                 </div>
-                                <div className="Mobile-Card-Detail">
+                                <div className="Mobile-Card-Detail" onClick={openDrawer}>
                                     자세히 보기
                                 </div>
                             </div>
@@ -92,7 +97,7 @@ function App(){
                                 <div className="Mobile-Card-SubTitle">
                                     React를 사용한 반응형 포트폴리오 페이지
                                 </div>
-                                <div className="Mobile-Card-Detail">
+                                <div className="Mobile-Card-Detail" onClick={openDrawer}>
                                     자세히 보기
                                 </div>
                             </div>
@@ -104,11 +109,20 @@ function App(){
                                 <div className="Mobile-Card-SubTitle">
                                     React를 사용한 반응형 포트폴리오 페이지
                                 </div>
-                                <div className="Mobile-Card-Detail">
+                                <div className="Mobile-Card-Detail" onClick={openDrawer}>
                                     자세히 보기
                                 </div>
                             </div>
                         </Slider>
+                        <Drawer
+                                duration={400}
+                                hideScrollbars={true}
+                                onClose={closeDrawer}
+                                isVisible={isVisible}
+                                className={"drawer"}
+                            >
+                                <Epic04 />
+                            </Drawer>
                     </div>
                 </div>
             </MobileView>
