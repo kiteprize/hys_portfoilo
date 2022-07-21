@@ -10,7 +10,7 @@ import './Epic_03.css';
 function BrowserCard(props){
     return(
         <div className="Browser-Card">
-            <img className="Browser-Card-Image" src={props.img} alt="PortFolio_MainPage"/>
+            <img className="Browser-Card-Image" src={props.img} alt="Card_thumbnail"/>
             <div className="Browser-Card-Title">
                 {props.Tilte}
             </div>
@@ -45,6 +45,7 @@ function App(){
     const [isVisible, setIsVisible] = React.useState(false);
     const openDrawer = React.useCallback(() => setIsVisible(true), []);
     const closeDrawer = React.useCallback(() => setIsVisible(false), []);  
+
     const settings ={
         arrows: false,
         dots: true,
@@ -54,6 +55,7 @@ function App(){
         slidesToScroll: 1,
         dragable: true,
     };
+    // const tag = 1;
 
     return(
         <div>
@@ -65,22 +67,20 @@ function App(){
                     <div className="browser-container">
                         <Slider {...settings}>
                             <BrowserCard 
-                                img = "portfolio_thumbnail/portfolio.png" 
+                                img = "Card_1_thumbnail/thumbnail.png" 
+                                // img = {`Card_${tag}_thumbnail/thumbnail.png`}
                                 Tilte = "개인 포트폴리오 사이트" 
                                 SubTitle = "React를 사용한 반응형 포트폴리오 페이지"
-                                openDrawer = {openDrawer}
                             />
                             <BrowserCard 
-                                img = "portfolio_thumbnail/portfolio.png" 
+                                img = "Card_1_thumbnail/thumbnail.png" 
                                 Tilte = "개인 포트폴리오 사이트" 
                                 SubTitle = "React를 사용한 반응형 포트폴리오 페이지"
-                                openDrawer = {openDrawer}
                             />
                             <BrowserCard 
-                                img = "portfolio_thumbnail/portfolio.png" 
+                                img = "Card_1_thumbnail/thumbnail.png" 
                                 Tilte = "개인 포트폴리오 사이트" 
                                 SubTitle = "React를 사용한 반응형 포트폴리오 페이지"
-                                openDrawer = {openDrawer}
                             />
                         </Slider>
                     </div>
@@ -94,19 +94,19 @@ function App(){
                     <div className="mobile-container">
                         <Slider {...settings}>
                             <MobileCard 
-                            img = "portfolio_thumbnail/portfolio.png" 
+                            img = "Card_1_thumbnail/thumbnail.png" 
                             Tilte = "개인 포트폴리오 사이트" 
                             SubTitle = "React를 사용한 반응형 포트폴리오 페이지"
                             openDrawer = {openDrawer}
                             />
                             <MobileCard 
-                            img = "portfolio_thumbnail/portfolio.png" 
+                            img = "Card_1_thumbnail/thumbnail.png" 
                             Tilte = "개인 포트폴리오 사이트" 
                             SubTitle = "React를 사용한 반응형 포트폴리오 페이지"
                             openDrawer = {openDrawer}
                             />
                             <MobileCard 
-                            img = "portfolio_thumbnail/portfolio.png" 
+                            img = "Card_1_thumbnail/thumbnail.png" 
                             Tilte = "개인 포트폴리오 사이트" 
                             SubTitle = "React를 사용한 반응형 포트폴리오 페이지"
                             openDrawer = {openDrawer}
