@@ -176,7 +176,7 @@
 }
 
 .drawer__handle-wrapper{
-    border: 2px solid #383838 !important;
+    border-bottom: 2px solid #383838 !important;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
     width: calc(100% - 4px) !important;
