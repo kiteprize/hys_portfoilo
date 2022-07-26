@@ -93,24 +93,29 @@
 
 .Browser__drawer__content{
     margin: auto !important;
-    padding: 0px !important;
+    padding: 58px 0 0 !important;
     max-height: fit-content !important;
 }
 
 .Browser__drawer__handle{
     width: 44px !important;
     height: 4px !important;
-    margin-top: 1.53vh;
+    margin-top: 12px !important;
     background: #383838 !important;
+    position: fixed !important;
+    top: 0px !important;
 }
 
 .Browser__drawer__handle-wrapper{
+    background-color: inherit !important;
     border-bottom: 2px solid #383838 !important;
     border-top-left-radius: 14px !important;
     border-top-right-radius: 14px !important;
-    width: 100%;
-    height: 7.43vh !important;
+    width: inherit !important;
+    height: 56px !important;
     padding: 0px !important;
+    position: fixed !important;
+    z-index: 11 !important;
 }
 
 .mobile-container{
@@ -204,7 +209,7 @@
 }
 
 .drawer__content{
-    padding: 0px !important;
+    padding: calc(7.43vh + 2px) 0 0 !important;
     max-height: fit-content !important;
 }
 
@@ -216,9 +221,13 @@
 }
 
 .drawer__handle-wrapper{
+    background-color: inherit !important;
     border-bottom: 2px solid #383838 !important;
     border-top-left-radius: 14px !important;
     border-top-right-radius: 14px !important;
     height: 7.43vh !important;
+    width: inherit !important;
     padding: 0px !important;
+    position: fixed !important;
+    z-index: 11 !important;
 }

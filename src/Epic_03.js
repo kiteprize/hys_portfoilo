@@ -3,7 +3,7 @@ import Drawer from "react-bottom-drawer";
 import {BrowserView, MobileView} from 'react-device-detect';
 import Slider from "react-slick";
 import Epic04 from "./Epic_04"
-import { Route, Routes } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import 'slick-carousel/slick/slick-theme.css';
 import './Epic_03.css';
@@ -18,9 +18,9 @@ function BrowserCard(props){
             <div className="Browser-Card-SubTitle">
                 {props.SubTitle}
             </div>
-            <div className="Browser-Card-Detail" onClick={props.openDrawer}>
+            <Link to={"/detail"} style={{textDecoration:"none"}} className="Browser-Card-Detail" onClick={props.openDrawer}>
                 자세히 보기
-            </div>
+            </Link>
         </div>
     );
 }
@@ -35,18 +35,21 @@ function MobileCard(props){
             <div className="Mobile-Card-SubTitle">
                 {props.SubTitle}
             </div>
-            <div className="Mobile-Card-Detail" onClick={props.openDrawer}>
+            <Link to={"/detail"} style={{textDecoration:"none"}} className="Mobile-Card-Detail" onClick={props.openDrawer}>
                 자세히 보기
-            </div>
+            </Link>
         </div>
     );
 }
 
 function App(){
+    const navigate = useNavigate()
     const [isVisible, setIsVisible] = React.useState(false);
     const openDrawer = React.useCallback(() => setIsVisible(true), []);
-    const closeDrawer = React.useCallback(() => setIsVisible(false), []);  
-
+    const closeDrawer = React.useCallback(() => {
+        setIsVisible(false);
+        navigate(-1);
+    }, []);
     const settings ={
         arrows: false,
         dots: true,
@@ -56,8 +59,11 @@ function App(){
         slidesToScroll: 1,
         dragable: true,
     };
-    // const tag = 1;
-    
+    React.useEffect(() => {
+        window.onpopstate = () =>{
+            setIsVisible(false);
+        }  
+    });
     return(
         <div>
             <BrowserView>
@@ -94,9 +100,7 @@ function App(){
                                 isVisible={isVisible}
                                 className={"Browser__drawer"}
                             >
-                            <Routes>
-                                <Route path="/detail" element={<Epic04/>}/>
-                            </Routes>
+                            <Epic04 />
                         </Drawer>
                     </div>
                 </div>
