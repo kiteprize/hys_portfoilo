@@ -3,6 +3,7 @@ import Drawer from "react-bottom-drawer";
 import {BrowserView, MobileView} from 'react-device-detect';
 import Slider from "react-slick";
 import Epic04 from "./Epic_04"
+import { Route, Routes } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import 'slick-carousel/slick/slick-theme.css';
 import './Epic_03.css';
@@ -56,7 +57,7 @@ function App(){
         dragable: true,
     };
     // const tag = 1;
-
+    
     return(
         <div>
             <BrowserView>
@@ -71,18 +72,32 @@ function App(){
                                 // img = {`Card_${tag}_thumbnail/thumbnail.png`}
                                 Tilte = "개인 포트폴리오 사이트" 
                                 SubTitle = "React를 사용한 반응형 포트폴리오 페이지"
+                                openDrawer = {openDrawer}
                             />
                             <BrowserCard 
                                 img = "Card_1_thumbnail/thumbnail.png" 
                                 Tilte = "개인 포트폴리오 사이트" 
                                 SubTitle = "React를 사용한 반응형 포트폴리오 페이지"
+                                openDrawer = {openDrawer}
                             />
                             <BrowserCard 
                                 img = "Card_1_thumbnail/thumbnail.png" 
                                 Tilte = "개인 포트폴리오 사이트" 
                                 SubTitle = "React를 사용한 반응형 포트폴리오 페이지"
+                                openDrawer = {openDrawer}
                             />
                         </Slider>
+                        <Drawer
+                                duration={400}
+                                hideScrollbars={true}
+                                onClose={closeDrawer}
+                                isVisible={isVisible}
+                                className={"Browser__drawer"}
+                            >
+                            <Routes>
+                                <Route path="/detail" element={<Epic04/>}/>
+                            </Routes>
+                        </Drawer>
                     </div>
                 </div>
             </BrowserView>
