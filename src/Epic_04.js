@@ -1,155 +1,94 @@
 import React from "react";
 import {BrowserView, MobileView} from 'react-device-detect';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import 'slick-carousel/slick/slick-theme.css';
 import './Epic_04.css';
 
+
 function App(){
-    const settings ={
-        arrows: false,
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dragable: true,
-    };
     return(
         <div>
             <BrowserView>
-                <div className="Browser-MainTitle">
-                    개발
-                </div>
-                <div className="Browser-container">
-                    <Slider {...settings}>
-                        <img src="Card_1_1_pics/portfolio1.png" alt="pics"/>
-                        <img src="Card_1_1_pics/portfolio2.png" alt="pics"/>
-                        <img src="Card_1_1_pics/portfolio3.png" alt="pics"/>
-                    </Slider>
-                </div>
-                <div className="Browser-SubTitle">
-                    부제목
-                </div>
-                <div className="Browser-TextLine">
-                    이곳은 해당 프로젝트의 개발 과정과 프로젝트를 마무리하며 느꼈던 감정들을 적어놓은 공간입니다.
-                    <br/>
-                    <br/>
-                    현재 프로젝트가 미완성 된 상태이고 들어갈 내용을 생각하지 않아 더미데이터 형식으로 이와 같은 내용이 첨부되었습니다.
-                </div>
-                <div className="Browser-SplitLine"/>
-                <div className="Browser-MainTitle">
-                    기획
-                </div>
-                <div className="Browser-container">
-                    <Slider {...settings}>
-                        <img src="Card_1_1_pics/portfolio1.png" alt="pics"/>
-                        <img src="Card_1_1_pics/portfolio2.png" alt="pics"/>
-                        <img src="Card_1_1_pics/portfolio3.png" alt="pics"/>
-                    </Slider>
-                </div>
-                <div className="Browser-SubTitle">
-                    부제목
-                </div>
-                <div className="Browser-TextLine">
-                    이곳은 해당 프로젝트의 개발 과정과 프로젝트를 마무리하며 느꼈던 감정들을 적어놓은 공간입니다.
-                    <br/>
-                    <br/>
-                    현재 프로젝트가 미완성 된 상태이고 들어갈 내용을 생각하지 않아 더미데이터 형식으로 이와 같은 내용이 첨부되었습니다.
-                </div>
-                {/* <div className="Browser-SplitLine" style={{width:"356px"}}/>
-                <div className="Browser-Navigator">
-                    <div className="Browser-Navigator-Area">
-                        <img className="Browser-Navigator-Arrow" src="Icons/Arrow.png" alt="Arrow"/>
-                        <div className="Browser-Navigator-TextLine">
-                            <div className="Browser-Navigator-TextLine-label">
-                                이전 글
-                            </div>
-                            <div className="Browser-Navigator-TextLine-Title">
-                                개인 포트폴리오...
-                            </div>
-                        </div>
+                <div className="background">
+                    <div className="Browser-Maintext">
+                        Profile
                     </div>
-                    <div className="Browser-Navigator-Middlebar"/>
-                    <div className="Browser-Navigator-Area">
-                        <div className="Browser-Navigator-TextLine">
-                            <div className="Browser-Navigator-TextLine-label" style={{textAlign: "right"}}>
-                                다음 글
-                            </div>
-                            <div className="Browser-Navigator-TextLine-Title" style={{textAlign: "right"}}>
-                                개인 포트폴리오...
-                            </div>
-                        </div>
-                        <img className="Browser-Navigator-Arrow" src="Icons/Arrow.png" alt="Arrow" style={{transform: "scaleX(-1)"}}/>
+                    <img className="Browser-Represent-Image" src="Icons/represent_image.png" alt="represent"/>
+                    <div className="Browser-Name">
+                        황연상
                     </div>
-                </div> */}
+                    <div className="Browser-Job">
+                        웹 개발자
+                    </div>
+                    <div className="Browser-Icon-Area">
+                        <div className="Browser-Icon-Area-Name">
+                            이 포트폴리오를 만들 때 쓴 것들
+                        </div>
+                        <div className="Browser-Icon-Area-Splitline"/>
+                        <img className="Browser-Skillbox-icon" src="Skill_icon/css.png" alt="css"/>
+                        <img className="Browser-Skillbox-icon" src="Skill_icon/html.png" alt="html"/>
+                        <img className="Browser-Skillbox-icon" src="Skill_icon/javascript.png" alt="javascript"/>
+                        <img className="Browser-Skillbox-icon" src="Skill_icon/react.png" alt="react"/>
+                        <img className="Browser-Skillbox-icon" src="Skill_icon/vscode.png" alt="vscode"/>
+                        <img className="Browser-Skillbox-icon" src="Skill_icon/jira.png" alt="jira"/>
+                        <img className="Browser-Skillbox-icon" src="Skill_icon/slack.png" alt="slack"/>
+                    </div>
+                    <div className="Browser-Icon-Area">
+                        <div className="Browser-Icon-Area-Name">
+                            연락처
+                        </div>
+                        <div className="Browser-Icon-Area-Splitline"/>
+                        <a href="mailto:dustkd4294@naver.com">
+                            <img className="Browser-Contact-icon" src="Icons/Email.png" alt="Email"/>
+                        </a>
+                        <a href="https://github.com/kiteprize">
+                            <img className="Browser-Contact-icon" src="Icons/Github.png" alt="Github"/>
+                        </a>
+                    </div>
+                    <a href="https://kiteprize.github.io/kyt_portfolio/" className="Browser-Hyperlink-Text">
+                        디자인은 누가 했는지 궁금하신가요? &gt;
+                    </a>
+                </div>
             </BrowserView>
             <MobileView>
-                <div className="Mobile-MainTitle">
-                    개발
-                </div>
-                <div className="Mobile-container">
-                    <Slider {...settings}>
-                        <img src="Card_1_1_pics/portfolio1.png" alt="pics"/>
-                        <img src="Card_1_1_pics/portfolio2.png" alt="pics"/>
-                        <img src="Card_1_1_pics/portfolio3.png" alt="pics"/>
-                    </Slider>
-                </div>
-                <div className="Mobile-SubTitle">
-                    부제목
-                </div>
-                <div className="Mobile-TextLine">
-                    이곳은 해당 프로젝트의 개발 과정과 프로젝트를 마무리하며 느꼈던 감정들을 적어놓은 공간입니다.
-                    <br/>
-                    <br/>
-                    현재 프로젝트가 미완성 된 상태이고 들어갈 내용을 생각하지 않아 더미데이터 형식으로 이와 같은 내용이 첨부되었습니다.
-                </div>
-                <div className="Mobile-SplitLine"/>
-                <div className="Mobile-MainTitle">
-                    기획
-                </div>
-                <div className="Mobile-container">
-                    <Slider {...settings}>
-                        <img src="Card_1_1_pics/portfolio1.png" alt="pics"/>
-                        <img src="Card_1_1_pics/portfolio2.png" alt="pics"/>
-                        <img src="Card_1_1_pics/portfolio3.png" alt="pics"/>
-                    </Slider>
-                </div>
-                <div className="Mobile-SubTitle">
-                    부제목
-                </div>
-                <div className="Mobile-TextLine">
-                    이곳은 해당 프로젝트의 개발 과정과 프로젝트를 마무리하며 느꼈던 감정들을 적어놓은 공간입니다.
-                    <br/>
-                    <br/>
-                    현재 프로젝트가 미완성 된 상태이고 들어갈 내용을 생각하지 않아 더미데이터 형식으로 이와 같은 내용이 첨부되었습니다.
-                </div>
-                {/* <div className="Mobile-SplitLine" style={{width:"93.684vw"}}/>
-                <div className="Mobile-Navigator">
-                    <div className="Mobile-Navigator-Area">
-                        <img className="Mobile-Navigator-Arrow" src="Icons/Arrow.png" alt="Arrow"/>
-                        <div className="Mobile-Navigator-TextLine">
-                            <div className="Mobile-Navigator-TextLine-label">
-                                이전 글
-                            </div>
-                            <div className="Mobile-Navigator-TextLine-Title">
-                                개인 포트폴리오...
-                            </div>
-                        </div>
+                <div className="background">
+                    <div className="Mobile-Maintext">
+                        Profile
                     </div>
-                    <div className="Mobile-Navigator-Middlebar"/>
-                    <div className="Mobile-Navigator-Area">
-                        <div className="Mobile-Navigator-TextLine">
-                            <div className="Mobile-Navigator-TextLine-label" style={{textAlign: "right"}}>
-                                다음 글
-                            </div>
-                            <div className="Mobile-Navigator-TextLine-Title" style={{textAlign: "right"}}>
-                                개인 포트폴리오...
-                            </div>
-                        </div>
-                        <img className="Mobile-Navigator-Arrow" src="Icons/Arrow.png" alt="Arrow" style={{transform: "scaleX(-1)"}}/>
+                    <img className="Mobile-Represent-Image" src="Icons/represent_image.png" alt="represent"/>
+                    <div className="Mobile-Name">
+                        황연상
                     </div>
-                </div> */}
+                    <div className="Mobile-Job">
+                        developer
+                    </div>
+                    <div className="Mobile-Icon-Area">
+                        <div className="Mobile-Icon-Area-Name">
+                            USED TOOL & LANGUAGE & FRAMEWORK
+                        </div>
+                        <div className="Mobile-Icon-Area-Splitline"/>
+                        <img className="Mobile-Skillbox-icon" src="Skill_icon/css.png" alt="css"/>
+                        <img className="Mobile-Skillbox-icon" src="Skill_icon/html.png" alt="html"/>
+                        <img className="Mobile-Skillbox-icon" src="Skill_icon/javascript.png" alt="javascript"/>
+                        <img className="Mobile-Skillbox-icon" src="Skill_icon/react.png" alt="react"/>
+                        <img className="Mobile-Skillbox-icon" src="Skill_icon/vscode.png" alt="vscode"/>
+                        <img className="Mobile-Skillbox-icon" src="Skill_icon/jira.png" alt="jira"/>
+                        <img className="Mobile-Skillbox-icon" src="Skill_icon/slack.png" alt="slack"/>
+                    </div>
+                    <div className="Mobile-Icon-Area">
+                        <div className="Mobile-Icon-Area-Name">
+                            CONTACT
+                        </div>
+                        <div className="Mobile-Icon-Area-Splitline"/>
+                        <a href="mailto:dustkd4294@naver.com">
+                            <img className="Mobile-Contact-icon" src="Icons/Email.png" alt="Email"/>
+                        </a>
+                        <a href="https://github.com/kiteprize">
+                            <img className="Mobile-Contact-icon" src="Icons/Github.png" alt="Github"/>
+                        </a>
+                    </div>
+                    <a href="https://kiteprize.github.io/kyt_portfolio/" className="Mobile-Hyperlink-Text">
+                        디자인은 누가 했는지 궁금하신가요? &gt;
+                    </a>
+                </div>
             </MobileView>
         </div>
     );
