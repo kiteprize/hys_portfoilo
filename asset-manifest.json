@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/hys_portfoilo/static/css/main.5ed34d43.css",
-    "main.js": "/hys_portfoilo/static/js/main.5c92421a.js",
-    "static/media/SUIT-Regular.ttf": "/hys_portfoilo/static/media/SUIT-Regular.47e0b5c3a0e37b89ab9f.ttf",
-    "static/media/SUIT-Medium.ttf": "/hys_portfoilo/static/media/SUIT-Medium.668c72ca39dc580970ee.ttf",
-    "static/media/SUIT-SemiBold.ttf": "/hys_portfoilo/static/media/SUIT-SemiBold.5bf11d17db49ba7828eb.ttf",
-    "static/media/SUIT-Bold.ttf": "/hys_portfoilo/static/media/SUIT-Bold.0af82d5a6d485bfb66dc.ttf",
-    "static/media/SUIT-ExtraBold.ttf": "/hys_portfoilo/static/media/SUIT-ExtraBold.4b9446cd55d415b4c913.ttf",
-    "static/media/slick.svg": "/hys_portfoilo/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/hys_portfoilo/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/hys_portfoilo/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/hys_portfoilo/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/hys_portfoilo/index.html",
-    "main.5ed34d43.css.map": "/hys_portfoilo/static/css/main.5ed34d43.css.map",
-    "main.5c92421a.js.map": "/hys_portfoilo/static/js/main.5c92421a.js.map"
+    "main.css": "/static/css/main.024571d4.css",
+    "main.js": "/static/js/main.5c92421a.js",
+    "static/media/SUIT-Regular.ttf": "/static/media/SUIT-Regular.47e0b5c3a0e37b89ab9f.ttf",
+    "static/media/SUIT-Medium.ttf": "/static/media/SUIT-Medium.668c72ca39dc580970ee.ttf",
+    "static/media/SUIT-SemiBold.ttf": "/static/media/SUIT-SemiBold.5bf11d17db49ba7828eb.ttf",
+    "static/media/SUIT-Bold.ttf": "/static/media/SUIT-Bold.0af82d5a6d485bfb66dc.ttf",
+    "static/media/SUIT-ExtraBold.ttf": "/static/media/SUIT-ExtraBold.4b9446cd55d415b4c913.ttf",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.024571d4.css.map": "/static/css/main.024571d4.css.map",
+    "main.5c92421a.js.map": "/static/js/main.5c92421a.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ed34d43.css",
+    "static/css/main.024571d4.css",
     "static/js/main.5c92421a.js"
   ]
 }
