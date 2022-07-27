@@ -23,9 +23,9 @@ function App(){
                 </div>
                 <div className="Browser-container">
                     <Slider {...settings}>
-                        <img src="/Card_1_1_pics/portfolio1.png" alt="pics"/>
-                        <img src="/Card_1_1_pics/portfolio2.png" alt="pics"/>
-                        <img src="/Card_1_1_pics/portfolio3.png" alt="pics"/>
+                        <img src="Card_1_1_pics/Card_1_1_pics/portfolio1.png" alt="pics"/>
+                        <img src="Card_1_1_pics/Card_1_1_pics/portfolio2.png" alt="pics"/>
+                        <img src="Card_1_1_pics/Card_1_1_pics/portfolio3.png" alt="pics"/>
                     </Slider>
                 </div>
                 <div className="Browser-SubTitle">
@@ -43,9 +43,9 @@ function App(){
                 </div>
                 <div className="Browser-container">
                     <Slider {...settings}>
-                        <img src="/Card_1_1_pics/portfolio1.png" alt="pics"/>
-                        <img src="/Card_1_1_pics/portfolio2.png" alt="pics"/>
-                        <img src="/Card_1_1_pics/portfolio3.png" alt="pics"/>
+                        <img src="Card_1_1_pics/Card_1_1_pics/portfolio1.png" alt="pics"/>
+                        <img src="Card_1_1_pics/Card_1_1_pics/portfolio2.png" alt="pics"/>
+                        <img src="Card_1_1_pics/Card_1_1_pics/portfolio3.png" alt="pics"/>
                     </Slider>
                 </div>
                 <div className="Browser-SubTitle">
@@ -90,9 +90,9 @@ function App(){
                 </div>
                 <div className="Mobile-container">
                     <Slider {...settings}>
-                        <img src="/Card_1_1_pics/portfolio1.png" alt="pics"/>
-                        <img src="/Card_1_1_pics/portfolio2.png" alt="pics"/>
-                        <img src="/Card_1_1_pics/portfolio3.png" alt="pics"/>
+                        <img src="Card_1_1_pics/Card_1_1_pics/portfolio1.png" alt="pics"/>
+                        <img src="Card_1_1_pics/Card_1_1_pics/portfolio2.png" alt="pics"/>
+                        <img src="Card_1_1_pics/Card_1_1_pics/portfolio3.png" alt="pics"/>
                     </Slider>
                 </div>
                 <div className="Mobile-SubTitle">
@@ -110,9 +110,9 @@ function App(){
                 </div>
                 <div className="Mobile-container">
                     <Slider {...settings}>
-                        <img src="/Card_1_1_pics/portfolio1.png" alt="pics"/>
-                        <img src="/Card_1_1_pics/portfolio2.png" alt="pics"/>
-                        <img src="/Card_1_1_pics/portfolio3.png" alt="pics"/>
+                        <img src="Card_1_1_pics/Card_1_1_pics/portfolio1.png" alt="pics"/>
+                        <img src="Card_1_1_pics/Card_1_1_pics/portfolio2.png" alt="pics"/>
+                        <img src="Card_1_1_pics/Card_1_1_pics/portfolio3.png" alt="pics"/>
                     </Slider>
                 </div>
                 <div className="Mobile-SubTitle">
