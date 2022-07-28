@@ -49,7 +49,7 @@ function App(){
     const closeDrawer = React.useCallback(() => {
         setIsVisible(false);
         navigate(-1);
-    }, []);
+    }, [navigate]);
     const settings ={
         arrows: false,
         dots: true,
