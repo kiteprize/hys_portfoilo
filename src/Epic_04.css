@@ -1,0 +1,178 @@
+.background{
+    background-color: #121212;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Browser-Maintext{
+    height: 40px;
+    margin: 56px;
+    padding: 0;
+    text-align: center;
+    font-family: "Suit_EB";
+    font-size: 32px;
+    color: white;
+}
+
+.Browser-Represent-Image{
+    width: 92px;
+    height: 92px;
+    margin : 0;
+}
+
+.Browser-Name{
+    height: 24px;
+    margin-top: 24px;
+    text-align: center;
+    font-family: "Suit_SB";
+    font-size: 24px;
+    color: white;
+}
+
+.Browser-Job{
+    height: 20px;
+    margin-top: 8px;
+    margin-bottom: 36px;
+    text-align: center;
+    font-family: "Suit_M";
+    font-size: 16px;
+    color: white;
+}
+
+.Browser-Icon-Area{
+    width: 312px;
+    height: fit-content;
+    padding: 0 0px 60px;
+    margin: 0px;
+}
+
+.Browser-Icon-Area-Name{
+    height: 16px;
+    margin: 0 auto 8px 4px;
+    text-align: left;
+    font-size: 12px;
+    font-family: "Suit-M";
+    color: white;
+}
+
+.Browser-Icon-Area-Splitline{
+    width: 100%;
+    height: 1px;
+    margin: 0px;
+    background-color: #D9D9D9;
+}
+
+.Browser-Skillbox-icon{
+    width: 48px;
+    height: 48px;
+    margin: 12px 0 0 12px;
+}
+
+.Browser-Contact-icon{
+    width: 36px;
+    height: 36px;
+    margin: 12px 0 0 16px;
+}
+
+.Browser-Contact-icon:hover{
+    filter: brightness(140%);
+}
+
+.Browser-Hyperlink-Text{
+    height: 16px;
+    margin: calc(100vh - 761px) auto 36px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: "Suit-M";
+    color: white;
+}
+
+/* -------- */
+
+.Mobile-Maintext{
+    height: 5.128vh;
+    margin: 7.179vh;
+    padding: 0;
+    text-align: center;
+    font-family: "Suit_EB";
+    font-size: 4.102vh;
+    color: white;
+}
+
+.Mobile-Represent-Image{
+    width: 11.794vh;
+    height: 11.794vh;
+    margin : 0;
+}
+
+.Mobile-Name{
+    height: 3.076vh;
+    margin-top: 3.076vh;
+    text-align: center;
+    font-family: "Suit_SB";
+    font-size: 3.076vh;
+    color: white;
+}
+
+.Mobile-Job{
+    height: 2.564vh;
+    margin-top: 1.025vh;
+    margin-bottom: 4.615vh;
+    text-align: center;
+    font-family: "Suit_M";
+    font-size: 2.051vh;
+    color: white;
+}
+
+.Mobile-Icon-Area{
+    width: 82.105vw;
+    height: fit-content;
+    padding: 0px 0px 7.692vh;
+    margin: 0px;
+}
+
+.Mobile-Icon-Area-Name{
+    height: 2.051vh;
+    margin: 0 auto 1.025vh 1.052vw;
+    text-align: left;
+    font-size: 1.538vh;
+    font-family: "Suit-M";
+    color: white;
+}
+
+.Mobile-Icon-Area-Splitline{
+    width: 100%;
+    height: 1px;
+    margin: 0px;
+    background-color: #D9D9D9;
+}
+
+.Mobile-Skillbox-icon{
+    width: 6.153vh;
+    height: 6.153vh;
+    margin: 1.538vh 0 0 3.157vw;
+}
+
+.Mobile-Contact-icon{
+    width: 4.615vh;
+    height: 4.615vh;
+    margin: 1.538vh 0 0 4.21vw;
+}
+
+.Mobile-Contact-icon:hover{
+    filter: brightness(140%);
+}
+
+.Mobile-Hyperlink-Text{
+    height: 2.051vh;
+    margin: 2.435vh auto 4.615vh;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.538vh;
+    font-family: "Suit-M";
+    color: white;
+}
